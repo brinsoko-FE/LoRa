@@ -1,0 +1,92 @@
+{
+	"beacons": [
+		{
+			"callsign": "S50BSO-2",
+			"symbol": "[",
+			"overlay": "/",
+			"micE": "",
+			"comment": "",
+			"smartBeacon": {
+				"active": false,
+				"slowRate": 120,
+				"slowSpeed": 3,
+				"fastRate": 60,
+				"fastSpeed": 15,
+				"minTxDist": 50,
+				"minDeltaBeacon": 20,
+				"turnMinDeg": 12,
+				"turnSlope": 60
+			}			
+		},
+		{
+			"callsign": "S50BSO-3",
+			"symbol": ">",
+			"overlay": "/",
+			"micE": "",
+			"comment": "",
+			"smartBeacon": {
+				"active": true,
+				"slowRate": 120,
+				"slowSpeed": 10,
+				"fastRate": 60,
+				"fastSpeed": 70,
+				"minTxDist": 100,
+				"minDeltaBeacon": 12,
+				"turnMinDeg": 10,
+				"turnSlope": 80
+			}
+		}
+	],
+	"lora": {
+		"frequency": 433775000,
+		"spreadingFactor": 12,
+		"signalBandwidth": 125000,
+		"codingRate4": 5,
+		"power": 20
+	},
+	"other": {
+		"simplifiedTrackerMode": false,
+		"showSymbolOnScreen": true,
+		"sendCommentAfterXBeacons": 10,
+		"displayEcoMode": false,
+		"displayTimeout": 4,
+		"path": "WIDE1-1",
+		"nonSmartBeaconRate": 15,
+		"rememberStationTime": 30,
+		"maxDistanceToTracker": 30, 
+		"standingUpdateTime": 15,
+		"sendAltitude": true,
+		"sendBatteryInfo": false,
+		"bluetoothType": 1,
+		"bluetoothActive": true,
+		"disableGPS": false
+	},
+	"pttTrigger": {
+		"active": false,
+		"io_pin": 4,
+		"preDelay": 0,
+		"postDelay": 0,
+		"reverse": false
+	},
+	"bme": {
+		"active": false,
+		"sendTelemetry": false,
+		"heightCorrection": 0
+	},
+	"notification": {
+		"ledTx": true,
+		"ledTxPin": 13,
+		"ledMessage": false,
+		"ledMessagePin": 2,
+		"ledFlashlight": false,
+		"ledFlashlightPin": 14,
+		"buzzerActive": false,
+		"buzzerPinTone": 33,
+		"buzzerPinVcc": 25,
+		"bootUpBeep": false,
+		"txBeep": false,
+		"messageRxBeep": false,
+		"stationBeep": false,
+		"lowBatteryBeep": false
+	}
+}
